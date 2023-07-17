@@ -36,8 +36,7 @@ function openDialog() {
 }
 
 function processMessage(arg) {
-  console.log(arg);
-  // const cookies = document.cookie.split('; ');
-  // const userNameCookie = cookies.filter((cookie) => cookie.startsWith('username'));
-  // document.getElementById("cookie").innerHTML = userNameCookie;
+  const cookies = document.cookie.split('; ');
+  const userNameCookie = cookies.filter((cookie) => cookie.startsWith('username'));
+  document.getElementById("cookie").innerHTML = userNameCookie;
 }
